@@ -57,7 +57,15 @@ python scripts/search_text.py --query "red running shoes" --top-k 5
 python scripts/evaluate_baseline.py --config configs/baseline.yaml
 ```
 
-Day 1 只要求完成项目骨架和 toy 数据：
+API demo:
+
+```bash
+PYTHONPATH=src python -m uvicorn mm_search_lab.api:app --host 127.0.0.1 --port 8000
+curl -s "http://127.0.0.1:8000/health"
+curl -s "http://127.0.0.1:8000/search/text?query=red%20running%20shoes&top_k=3"
+```
+
+Smoke test:
 
 ```bash
 python scripts/build_toy_data.py
@@ -83,3 +91,26 @@ catalog.jsonl -> CLIP embeddings -> FAISS index -> TopK retrieval -> baseline me
 ## Interview Focus
 
 这个 baseline 对应搜推链路中的召回层：输入多模态内容供给，输出可检索的统一表征，并用离线指标评估召回质量。
+
+## Week 1 Baseline Status
+
+Day 7 full rerun passed on Ubuntu VM CPU:
+
+- Toy catalog: 12 items
+- Embedding shape: text `(12, 512)`, image `(12, 512)`
+- FAISS index: `IndexFlatIP`, `ntotal=12`
+- Text query `"red running shoes"`: Top1 `item_001`
+- Image query `data/raw/images/item_001.jpg`: Top1 `item_001`, score `1.0000`
+- Smoke tests: `9 passed`
+
+Latest baseline metrics after warmup:
+
+- `text_to_image recall@1 = 1.0`, `mrr = 1.0`, `avg_ms = 122.7463`
+- `image_to_image recall@1 = 1.0`, `mrr = 1.0`, `avg_ms = 200.3786`
+- `overall recall@1 = 1.0`, `mrr = 1.0`, `p95_ms = 201.6476`
+
+See:
+
+- `docs/DAY6_DEMO.md`
+- `docs/DAY7_RERUN.md`
+- `docs/INTERVIEW_TALK_TRACK.md`
