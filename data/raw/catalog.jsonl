@@ -1,0 +1,12 @@
+{"id": "item_001", "title": "red running shoes", "caption": "a pair of red running shoes on white background", "genre": "product", "image_path": "data/raw/images/item_001.jpg"}
+{"id": "item_002", "title": "blue hiking backpack", "caption": "a blue backpack for outdoor travel", "genre": "product", "image_path": "data/raw/images/item_002.jpg"}
+{"id": "item_003", "title": "green mountain lake", "caption": "a green mountain landscape beside a quiet lake", "genre": "travel", "image_path": "data/raw/images/item_003.jpg"}
+{"id": "item_004", "title": "yellow city taxi", "caption": "a yellow taxi driving through a city street", "genre": "travel", "image_path": "data/raw/images/item_004.jpg"}
+{"id": "item_005", "title": "black wireless headphones", "caption": "black headphones for music and gaming", "genre": "product", "image_path": "data/raw/images/item_005.jpg"}
+{"id": "item_006", "title": "white coffee mug", "caption": "a white mug filled with hot coffee", "genre": "food", "image_path": "data/raw/images/item_006.jpg"}
+{"id": "item_007", "title": "orange basketball", "caption": "an orange basketball on a court", "genre": "sport", "image_path": "data/raw/images/item_007.jpg"}
+{"id": "item_008", "title": "purple flower bouquet", "caption": "a bouquet of purple flowers in a vase", "genre": "lifestyle", "image_path": "data/raw/images/item_008.jpg"}
+{"id": "item_009", "title": "silver laptop computer", "caption": "a silver laptop open on a desk", "genre": "product", "image_path": "data/raw/images/item_009.jpg"}
+{"id": "item_010", "title": "pink dessert cake", "caption": "a pink strawberry dessert cake on a plate", "genre": "food", "image_path": "data/raw/images/item_010.jpg"}
+{"id": "item_011", "title": "brown leather wallet", "caption": "a brown leather wallet for daily use", "genre": "product", "image_path": "data/raw/images/item_011.jpg"}
+{"id": "item_012", "title": "cyan swimming pool", "caption": "a cyan swimming pool at a summer resort", "genre": "travel", "image_path": "data/raw/images/item_012.jpg"}
